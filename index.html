@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feel.code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img src="./assets/photo_2024-10-26_09-45-40-removebg-preview (2).png" alt="">
+                </div>
+                <ul class="navbar__collection">
+                    <li class="navbar__item">
+                        <a href="#"><span>Biz haqimizda</span></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#"><span>Darsliklar</span></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="tel:+998889990969">Aloqa<span></span></a>
+                    </li>
+                </ul>
+                <div class="navbar__menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__text">
+                    <h1>JavaScript array Methods Cheat Sheet <br> (17 ta umumiy massiv usullari)</h1>
+                </div>
+
+                <div class="hero__title">
+                    <strong>concat()</strong>
+                    <p> 2 yoki undan ortiq array'larni <br> birlashtirib natijani qaytaradi</p>
+                 <div class="hero__topic">
+                    <strong>const arr1 = [1, 2,] <br>
+                            const arr1 = [3, 4, 5] <br>
+                            const result = arr1.concat(arr2);<br>
+                            console.log(result); <br>
+                            //Natija:[1, 2, 3, 4, 5]</strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>indexof()</strong>
+                    <p>array'ni ichidan elementni izlab uning  <br>joylashgan o'rnini (index) qaytaradi</p>
+                 <div class="hero__topic">
+                     <strong>const array = [10, 20, 30] <br>
+                             console.log( array.indexOf(30) ); <br>  Natija : 2   </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>forEach()</strong>
+                    <p>har bir element uchun berilgan funksiyani chaqiradi.</p>
+                 <div class="hero__topic">
+                    <strong>const newNumbers [2, 3, 4, 5] <br>
+                            nummbers.forEach((num) => { <br>
+                              newNumbers.push(num ** 2) <br>
+                            } ) <br> console.log(newNumbers); <br> Natija: [4, 9, 16, 25]</strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>map()</strong>
+                    <p>har bir massiv elementi uchun <br> berilgan funksiyani chaqirib, yangi array yaratadi.</p>
+                 <div class="hero__topic">
+                    <strong>const newNumbers [2, 3, 4, 5] <br>
+                            const mapNumbers = number.map((num) =>
+                             num ** 2 ) <br> console.log(mapNumbers);
+                              <br> Natija: [4, 9, 16, 25]
+                        </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>filter()</strong>
+                    <p>berilgan shartni bajargan elementlarni <br>saralab olib, yangi massiv yaratadi.</p>
+                 <div class="hero__topic">
+                    <strong>
+                        const number = [1, -1, 2, 3] <br>
+                        const filter = numbers.filter(n => n => 0); <br>
+                        console.log(filtered);<br>
+                        Natija : [1, 2, 3]
+                    </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>includes()</strong>
+                    <p>massivda ko'rsatilgan element mavjudligini tekshiradi (true, false).</p>
+                 <div class="hero__topic">
+                    <strong>const array = [10, 20, 30] <br>
+                        console.log( array.includes(20) ); <br>
+                        Natija : true</strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>slice()</strong>
+                    <p>massivni ko'rsatilgan qismini tanlab, qaytaradi.</p>
+                 <div class="hero__topic">
+                    <strong>const array = [10, 20, 30] <br>
+                        console.log( array.slice(0, 2)); <br>       Natija : [10, 20]</strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>push()</strong>
+                    <p>push yordamida array oxiriga so'z qo'shish mumkin.</p>
+                 <div class="hero__topic">
+                    <strong>let languages  = ['js', 'java] <br>
+                        languages.push('go')
+                        console.log(languages ); <br>       Natija : ['js', 'java', 'go'] </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>unshift()</strong>
+                    <p>unshift yordamida array boshiga so'z qo'shish mumkin.</p>
+                 <div class="hero__topic">
+                    <strong>let languages  = ['js', 'java'] <br>
+                        languages.unshift('go')  <br>
+                        console.log(languages ); <br>      
+                        Natija : ['go', 'js', 'java'] </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>pop()</strong>
+                    <p>pop metodidan foydalanib array ichidagi oxirgi <br> elementni o'chirish mumkin va boshqa qo'shish mumkin.</p>
+                 <div class="hero__topic">
+                    <strong>const languages  = ['js', 'java', 'go', 'swift'] <br>
+                        const deletedLanguage = languages.pop();  <br>
+                        console.log(languages ); <br>      
+                        Natija : ['js', 'java', 'go'] / X : swift  </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>shift()</strong>
+                    <p>shift metodidan foydalanib array ichidagi boshidagi <br> elementni o'chirish mumkin va boshqa qo'shish mumkin.</p>
+                 <div class="hero__topic">
+                    <strong>const languages  = ['js', 'java', 'go', 'swift'] <br>
+                        const deletedLanguage = languages.shift();  <br>
+                        console.log(languages ); <br>      
+                        Natija : ['swift', 'java', 'go'] / X : js  </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>some()</strong>
+                    <p>Usul someba'zi massiv qiymatlari sinovdan <br>o'tganligini tekshiradi. U trueyoki qaytaradi false.</p>
+                 <div class="hero__topic">
+                    <strong>let numbers = [4, 6, 14, 16] <br>
+                        let isSomeGreaterThan6 = numbers.some(n => n > 6) // true  <br> 
+                         let isSomeLessThan4 = numbers.some(n => n < 4) <br> // false     
+                    </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>every()</strong>
+                    <p>Usul someba'zi massiv qiymatlari sinovdan <br>o'tganligini tekshiradi. U trueyoki qaytaradi false.</p>
+                 <div class="hero__topic">
+                    <strong> let numbers = [4, 6, 14, 16] <br>
+                        let isEverythingGreaterThan6 = numbers.every(n => n > 6) // false  <br> 
+                        let isEverythingLessThan20 = numbers.some(n => n < 20) // true
+                    </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>sort()</strong>
+                    <p>sort massiv elementlarini o'sish tartibida <br>qo'yadi. Bu "joyida" tartiblash algoritmidir <br> - ya'ni u asl massivni o'zgartiradi va uni qaytaradi.</p>
+                 <div class="hero__topic">
+                    <strong> let nomlari = [ "Zoe" , "Odam" , "Dan"] <br>
+                        ismlar.saralash ( ) <br> 
+                        console.log( ismlar ) <br> Natija :  ['Odam', 'Dan', 'Zoe'] 
+
+                    </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>reduce()</strong>
+                    <p>Qayta qo'ng'iroq qilish funktsiyasi <br>reduceto'rtta argumentni olishi mumkin:</p>
+                 <div class="hero__topic">
+                    <strong>let numbers = [1, 2, 3, 4] <br>
+                        let total = numbers.reduce((total, currentNum) => total + currentNum)  <br> 
+                    </strong>
+                 </div>
+                </div>
+                <div class="hero__title">
+                    <strong>map()</strong>
+                    <p>Funktsiyaga o'tkazilgan qayta qo'ng'iroq <br> map()uchta argumentdan birini qabul qilishi mumkin:</p>
+                 <div class="hero__topic">
+                    <strong> let numbers = [1, 2, 3, 4] <br>
+                        let doubledNumbers = numbers.map(n => n * 2)   <br> 
+                        let doubledOddIndexNumbers = numbers.map((n, i) => { <br>
+                        if (i % 2 === 1) return n * 2  <br>
+                       else return n  <br> } )
+                    </strong>
+                 </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__text">
+                        <h2>© Mualliflik huquqi <a href="http://127.0.0.1:5500/index.html">Feel.code</a> Barcha huquqlar himoyalangan</h2>
+                    </div>
+                    <div class="footer__link">
+                        <a href="https://www.instagram.com/jamoldinovv___/profilecard/?igsh=MThtemt4OGZoeXl0ag=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/@biloliddinovic"><i class="fa-brands fa-telegram"></i></a>
+                        <div class="footer__number">
+                            <a href="tel:+998889990969">+998889990969</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+

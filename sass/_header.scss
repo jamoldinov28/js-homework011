@@ -1,0 +1,40 @@
+body{
+    background: #000;
+}
+.header{
+    background: #fff;
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__logo{
+            width: 200px;
+        }
+        &__collection{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &__menu{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header{
+        .navbar{
+            &__collection{
+                display: none;
+            }
+            &__menu{
+                display: block;
+                color: #000;
+                font-size: 20px;
+            }
+        }
+    }
+}
